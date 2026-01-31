@@ -1,0 +1,25 @@
+import java.util.Scanner;
+class Main
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[]args)
+	{
+		System.out.print("Enter a:");
+		int a=sc.nextInt();
+		
+		System.out.print("Enter b:");
+		int b=sc.nextInt();
+		
+		System.out.print("Enter c:");
+		int c=sc.nextInt();
+
+		System.out.println("Largest of three number is:"+ (a>b?(a>c)?a:c : (b>c)?b:c));
+	}
+}
+
+/*
+Enter a:23
+Enter b:4
+Enter c:123
+Largest of three number is:123
+*/
