@@ -1,0 +1,12 @@
+import java.util.Scanner;
+class Main
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[]args)
+	{
+		System.out.print("Enter a:");
+		int a=sc.nextInt();
+
+		System.out.println((a>=90 && a<=100)?"A grade":(a>=60 && a<90)?"B grade":(a>=35 && a<60)?"C grade" : (a<35 && a>=0)?"fail":(a>100 || a<0)?"Invalid":"corrupt");
+	}
+}
