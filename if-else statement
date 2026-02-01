@@ -1,0 +1,34 @@
+
+class Main
+{
+	public static void main(String[]args)
+	{
+		System.out.println("start");
+		
+		int x=10,y=20;
+		
+		if (x>y)
+			System.out.println("Bangalore");
+		else
+			System.out.println("chennai");
+		
+		System.out.println("salem");
+		
+		if (!false)
+		{
+			System.out.println("Mumbai");
+		}
+		else
+			System.out.println("Delhi");
+		
+		System.out.println("Reached!!!");
+	}
+}
+
+/*
+start
+chennai
+salem
+Mumbai
+Reached!!!
+*/
