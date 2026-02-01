@@ -1,0 +1,46 @@
+//using if else in decision making statement
+
+import java.util.Scanner;
+class Main
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[]args)
+	{
+		System.out.print("Enter any number:");
+		int num=sc.nextInt();
+		
+		if (num>0)
+		{
+			System.out.println("\t\t\t**positive integer**");
+		}
+		else
+			System.out.println("\t\t\t**negative integer**");
+	}
+}
+
+/*
+Enter any number:45
+
+                   **positive integer**
+*/
+
+//using conditional operator
+
+import java.util.Scanner;
+class Main
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[]args)
+	{
+		System.out.print("Enter any number:");
+		int num=sc.nextInt();
+		
+		System.out.println("Entered number is "+ (num>0?"positive" : "negative"));
+	}
+}
+
+/*
+output:
+Enter any number: 30
+Entered number is positive
+*/
