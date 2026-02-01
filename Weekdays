@@ -1,0 +1,53 @@
+import java.util.Scanner;
+class Main
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[]args)
+	{
+		System.out.println("**** WeekDays ****");
+		System.out.print("\nEnter WeekDays number \n(ex:(In a Week 7 days) weekdays=1):");
+		int weekday=sc.nextInt();
+		
+		if (weekday==1)
+		{
+			System.out.println("\nWeek day 1.Sunday");
+		}
+		else if (weekday==2)
+		{
+			System.out.println("\nWeek day 2.Monday");
+		}
+		else if (weekday==3)
+		{
+			System.out.println("\nWeek day 3.Tuesday");
+		}
+		else if (weekday==4)
+		{
+			System.out.println("\nWeek day 4.Wednesday");
+		}
+		else if (weekday==5)
+		{
+			System.out.println("\nWeek day 5.Thursday");
+		}
+		else if (weekday==6)
+		{
+			System.out.println("\nWeek day 6.Friday");
+		}
+		else if (weekday==7)
+		{
+			System.out.println("\nWeek day 7.Saturday");
+		}
+		else 
+			System.out.println("\nA week have only 7 days");
+	}
+}
+
+/*
+output:
+------------	
+**** WeekDays ****
+
+Enter WeekDays number
+(ex:(In a Week 7 days) weekdays=1):4
+
+Week day 4.Wednesday
+*/
