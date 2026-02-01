@@ -1,0 +1,32 @@
+import java.util.Scanner;
+class Main
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[]args)
+	{
+		System.out.println("Enter Character:");
+		char value=sc.next().charAt(0);
+		
+		if (value>='A'&& value<='Z' || value>='a' && value<='z')
+		{
+			System.out.println("Entered Character is Letter");
+		}
+		else if (value>='0' && value <='9')
+		{
+			System.out.println("Entered Character is Number");
+		}
+		else
+		{
+			System.out.println("Entered Character is SpecialCase");
+		}
+		
+	}
+}
+
+/*
+output:
+------------	
+Enter Character:
+A
+Entered Character is Letter
+*/
