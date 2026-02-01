@@ -1,0 +1,28 @@
+import java.util.Scanner;
+class Main
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[]args)
+	{
+		System.out.print("Enter Top 4 Tamil-Actor Name:");
+		String name=sc.nextLine();
+		
+		switch (name.toLowerCase())
+		{
+		case "vijay":System.out.println("Thalapathy");
+		break;
+		
+		case "ajith":System.out.println("AK");
+		break;
+		
+		case "rajinikanth":System.out.println("Super star");
+		break;
+		
+		case "kamalhassan":System.out.println("ulaganayagan");
+		break;
+		
+		default:System.out.println("Top 4 only ");
+		
+		}
+	}
+}
