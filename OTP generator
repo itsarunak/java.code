@@ -1,0 +1,40 @@
+import java.util.Scanner;
+class Main
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[]args)throws Exception
+	{
+		long contact=7171717171L;
+		
+		System.out.print("Enter your registered Mobile no:");
+		long num=sc.nextLong();
+		
+		
+		if (contact==num)
+		{
+			Thread.sleep(2000);
+			int otp=(int)(Math.random()*9999+9999);
+			
+			System.out.println("\nOTP:"+otp);
+			
+			System.out.print("\nEnter valid OTP:");
+			int OTP=sc.nextInt();
+			if (otp==OTP)
+			{
+				System.out.println("\n\t\t---Mobile number Verified!!!---\n\n\t Thank you !!!");
+			}
+		}
+	}
+}
+
+/*
+Enter your registered Mobile no:7171717171
+
+OTP:14333
+
+Enter valid OTP:14333
+
+                    ---Mobile number Verified!!!---
+
+   Thank you !!!
+*/
