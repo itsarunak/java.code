@@ -1,0 +1,123 @@
+import java.util.Scanner;
+class Main
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[]args)
+	{	
+		System.out.println("1.sql \n2.java \n3.python \n4.Software Testing");
+		System.out.print("\t\t\tChoose subject(ex:1): ");
+		int num=sc.nextInt();
+		
+		if (num==1)
+		{
+			System.out.println("Sql Trainers:- \n 1.Vinod \n 2.Nagaraj \n 3.Gaurav");
+			
+			System.out.println("\t\t\tChoose your trainer (ex:1): ");
+			int trainer=sc.nextInt();
+			
+			if (trainer==1)
+			{
+				System.out.println("Trainer: Vinod \n\n Class Timing:- 10:00Am (Room no:101) ");
+			}
+			else if (trainer==2)
+			{
+				System.out.println("Trainer: Nagaraj \n\n Class Timing:- 12:00pm (Room no:101)");
+			}
+			else if (trainer==3)
+			{
+				System.out.println("Trainer: Gaurav \n\n Class Timing:- 2:00pm (Room no:101)");
+			}
+			else
+				System.out.println("Invalid option");
+		}
+		else if (num==2)
+		{
+			System.out.println("Java Trainers:- \n 1.Tabrez \n 2.Nikhil");
+			System.out.println("\t\t\tChoose your trainer (ex:1):");
+			int trainer=sc.nextInt();
+			
+			if (trainer==1)
+			{
+				System.out.println("Trainer: Tabrez \n\n Class Timing:- 10:00am (Room no:102)");
+				
+				System.out.println("======================================");
+				
+				System.out.println("Are you Exicited to learn Advanced Java?");
+				sc.nextLine();
+				String ans=sc.nextLine();
+				
+				if (ans.equalsIgnoreCase("yes"))
+				{
+					System.out.println("\nTrainer: Surya \n\nClass Timing:- 12:00pm (Room no:102) ");
+				}
+				else
+				{
+					System.out.println("Thank you!!");
+				}
+			}
+			else if (trainer==2)
+			{
+				System.out.println("Trainer: Nikhil \n\n Class Timing:- 2:00pm (Room no:102)");
+				
+				System.out.println("======================================");
+				System.out.println("Are you Exicited to learn Advanced Java?");
+				sc.nextLine();
+				String ans=sc.nextLine();
+				
+				if (ans.equalsIgnoreCase("yes"))
+				{
+					System.out.println("\nTrainer: Surya \n\nClass Timing:- 4:00pm (Room no:102) ");
+				}
+				else
+				{
+					System.out.println("Thank You !!");
+				}
+			}
+			else
+				System.out.println("Invalid option");
+		}
+		else if (num==3)
+		{
+			System.out.println("Python Trainers:- \n 1.Yuvraj \n 2.Gaurav");
+			System.out.println("\t\t\tChoose your trainer (ex:1):");
+			int trainer=sc.nextInt();
+			
+			if (trainer==1)
+			{
+				System.out.println("Trainer: Yuvraj \n\n Class Timing:- 10:00am (Room no:103)");
+			
+			}
+			else if (trainer==2)
+			{
+				System.out.println("Trainer: Gaurav \n\n Class Timing:- 2:00pm (Room no:103)");
+			}
+			else
+				System.out.println("Invalid option");
+		}
+		else if (num==4)
+		{
+			System.out.println("Software testing Trainers:- \n 1.Gajanan \n 2.vignesh");
+			System.out.println("\t\t\tChoose your trainer (ex:1):");
+			int trainer=sc.nextInt();
+			
+			if (trainer==1)
+			{
+				System.out.println("Trainer: Gajanan \n\n Class Timing:- 10:00am (Room no:104)");
+			
+			}
+			else if (trainer==2)
+			{
+				System.out.println("Trainer:Vignesh \n\n Class Timing:- 2:00pm (Room no:104)");
+			}
+			else
+				System.out.println("Invalid option");
+		}
+		else
+				System.out.println("Invalid option");
+		
+		
+	}
+}
+
+
+
