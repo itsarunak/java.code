@@ -1,0 +1,50 @@
+import java.util.Scanner;
+class Main
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[]args)
+	{
+		
+		System.out.print("\nEnter character:");
+		char value =sc.next().charAt(0);
+		
+		if (value>='A' && value<='Z')
+		{
+			if(value=='A'||value=='E'||value=='I'||value=='O'||value=='U')
+			{
+				System.out.println("uppercase & vowel");
+			}
+			else
+			{
+				System.out.println("Uppercase & consonet");
+			}
+				
+		}
+		else if (value>='a' && value<='z')
+		{
+			if (value=='a'||value=='e'||value=='i'||value=='o'||value=='u')
+			{
+				System.out.println("lowercase & vowels");
+			}	
+			else
+			{
+				System.out.println("lowercase & consonent");
+			}
+					
+		}
+		else if (value>='0' && value<='9')
+		{
+			System.out.println("Number");
+		}
+		else
+			System.out.println("Special case");	
+		
+	}
+}
+
+/*
+output:
+------------
+Enter character:b
+lowercase & consonent
+*/
