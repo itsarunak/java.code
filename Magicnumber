@@ -1,0 +1,61 @@
+import java.util.Scanner;
+class Magicnumber
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[]args)
+	{
+		boolean flag=true;
+		int sys=(int)(Math.random()*100);
+		int attempt=5;
+		
+		do
+		{
+			if (attempt>0)
+			{
+				System.out.println("\t\t\twelcome");
+				System.out.println("\t\t\t--------------");
+				System.out.println(sys);
+				System.out.println("Guess your number(1-100):");
+				int user_guess=sc.nextInt();
+				attempt--;
+				
+				if (user_guess>sys)
+				{
+					System.out.println("High");
+				}
+				else if (user_guess<sys)
+				{
+					System.out.println("low");
+				}
+				else{
+					System.out.println("\t\t\tCongrats.....!  you won.....:)");
+					attempt=5;
+					
+					System.out.println("\t\t\t1.continue");
+					System.out.println("\t\t\t2.Exit");
+					int n=sc.nextInt();
+					
+					if (n==1)
+					{
+					   sys=(int)(Math.random()*100);
+					}
+					else if (n==2)
+					{
+						flag=false;
+					}
+					
+				}
+			}
+			else {
+				System.out.println("It was:"+sys);
+				System.out.println("\t\t\tSorry you lost the game Attempts finish....!");
+				
+				flag=false;
+			}
+			
+			System.out.println("Attempts remaining:"+ attempt);
+		}
+		while (flag);
+		System.out.println("\t\t\tThank You");
+	}
+}
