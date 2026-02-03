@@ -1,0 +1,107 @@
+import java.util.*;
+class Main
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[]args)
+	{
+		boolean flag=true;
+		
+		do
+		{
+			System.out.println("Select your favorite actor\n\n1.vijay\n2.rajinikhanth\n3.dhanush\n4.Exit");
+			
+			System.out.print("\t\tselect here:");
+			int input=sc.nextInt();
+			
+			switch (input)
+			{
+			case 1:{
+				System.out.println("Vijay Top 5 upcoming re-release movies:-\n\n1.Ghilli\n2.Pokkiri\n3.Friends\n4.Jilla\n5.Nanban\n6.exit");
+				
+				System.out.print("\t\tselect here:");
+			    int input1=sc.nextInt();
+				
+				switch (input1)
+				{
+				case 1:System.out.println("***Ghilli ticket booked***");
+				break;
+				case 2:System.out.println("***Pokkiri ticket booked***");
+				break;
+				case 3:System.out.println("***Friends ticket booked***");
+				break;
+				case 4:System.out.println("***Jilla ticket booked***");
+				break;
+				case 5:System.out.println("***Nanban ticket booked***");
+				break;
+				case 6:System.out.println("Thank you!!!");
+				break;
+				}
+			}
+			break;
+			
+			case 2:{
+				
+				System.out.println("Rajinikhanth Top 5 upcoming re-release movies:-\n\n1.Athisayapiravi\n2.Baasha\n3.Padaiyappa\n4.Annamalai\n5.Enthiran\n6.exit");
+				
+				System.out.print("\t\tselect here:");
+			    int input2=sc.nextInt();
+				
+				switch (input2)
+				{
+				case 1:System.out.println("***Athisayapiravi ticket booked***");
+				break;
+				case 2:System.out.println("***Baasha ticket booked***");
+				break;
+				case 3:System.out.println("***Padaiyappa ticket booked***");
+				break;
+				case 4:System.out.println("***Annamalai ticket booked***");
+				break;
+				case 5:System.out.println("***Enthiran ticket booked***");
+				break;
+				case 6:System.out.println("Thank you!!!");
+				break;
+				}
+				
+			}
+			break;
+			
+			case 3:{
+				
+				System.out.println("Dhanush Top 5 upcoming re-release movies:-\n\n1.VIP\n2.Puthupettai\n3.uthamaputhiran\n4.Padikathavan\n5.Maari\n6.exit");
+				
+				System.out.print("\t\tselect here:");
+			    int input4=sc.nextInt();
+				
+				switch (input4)
+				{
+				case 1:System.out.println("***VIP ticket booked***");
+				break;
+				case 2:System.out.println("***Puthupettai ticket booked***");
+				break;
+				case 3:System.out.println("***Uthamaputhiran ticket booked***");
+				break;
+				case 4:System.out.println("***Padikathavan ticket booked***");
+				break;
+				case 5:System.out.println("***Maari ticket booked***");
+				break;
+				case 6:System.out.println("Thank you!!!");
+				break;
+				}
+
+			}
+			break;
+			
+			case 4:flag=false;
+			break;
+			
+			default:System.out.println("Invalid");
+			break;
+			
+			}
+			break;
+		}
+		while (flag);
+		System.out.println("Thank you !!");
+		
+	}
+}
