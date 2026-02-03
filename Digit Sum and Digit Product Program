@@ -1,0 +1,39 @@
+//Digit Sum and Digit Product Program
+import java.util.Scanner;
+class Main
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[]args)throws Exception
+	{
+		System.out.println("number:");
+		int num=sc.nextInt();
+		
+		if (num%2==0)
+		{
+			int sum=0;
+			
+			int temp=num;
+			while (temp>0)
+			{
+			   sum+=temp%10;
+			   temp/=10;
+			}
+			System.out.println("sum:"+sum);
+		}
+		else
+		{
+			int dsum=1;
+			
+			int tem=num;
+			
+			while (tem>0)
+			{
+				dsum*=tem%10;
+				tem/=10;
+				
+			}
+			
+			System.out.println("digital Product:"+dsum);
+		}
+	}
+}
