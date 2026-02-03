@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class factorial
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[]args)throws Exception
+	{
+		System.out.println("number:");
+		int num=sc.nextInt();
+		int ans=1;
+		for (int i=num;i>=2 ;i-- )
+		{
+			ans*=i;
+		}
+		
+		System.out.println("Factorial:"+ans);
+	}
+}
+/*
+5
+Factorial:120
+*/
