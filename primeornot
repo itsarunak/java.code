@@ -1,0 +1,27 @@
+import java.util.Scanner;
+class primeornot
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[]args)throws Exception
+	{
+		System.out.println("number:");
+		int num=sc.nextInt();
+		
+		boolean flag=true;
+		
+		for (int i=2;i<num/2 ;i++ )
+		{
+			if (num<=1)
+			{
+				flag=false;
+			}
+			else if (num%i==0)
+			{
+				flag=false;
+			}
+			
+		}
+		
+		System.out.println((flag)?"prime":"not prime");
+	}
+}
