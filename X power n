@@ -1,0 +1,27 @@
+import java.util.Scanner;
+class Main
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[]args)
+	{
+		System.out.println("Enter(x)base:");
+		double base=sc.nextDouble();
+		
+		System.out.println("Enter(n)power:");
+		double power=sc.nextDouble();
+		
+		
+		double res=Math.pow(base,power);
+		
+		System.out.println("Result:"+res);
+	}
+}
+/*
+output:
+-------------
+Enter(x)base:
+5
+Enter(n)power:
+3
+Result:125.0
+*/
