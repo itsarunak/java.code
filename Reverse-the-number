@@ -1,0 +1,27 @@
+class Reversenum
+{
+	public static void main(String[]args)
+	{
+		int number=1234;
+		
+		int num=number;
+		
+		String ans="";
+		
+		while (num>0)
+		{
+			ans+=num%10;
+			num/=10;
+		}
+		
+		System.out.println("Given number:"+number);
+		System.out.println("Reversed number:"+ans);
+	}
+}
+
+/*
+output:
+------------------
+Given number: 1234
+Reversed number: 4321
+*/
