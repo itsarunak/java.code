@@ -1,0 +1,34 @@
+import java.util.*;
+class Armstrong
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[]args)
+	{
+		System.out.print("Enter number:");
+		int num=sc.nextInt();
+		
+		
+		int digits=0,sum=0 , temp=num;
+		
+		int temp1=num;
+		
+		while (temp>0)
+		{
+
+			temp/=10;
+			digits++;
+		}
+		
+		while (temp1>0)
+		{
+			sum+=(int)(Math.pow(temp1%10,digits));
+			temp1/=10;
+		}
+		
+		System.out.println((num==sum)?"its an armstrong number":"its not an armstrong number");
+	}
+}
+/*
+Enter number:153
+its an armstrong number
+*/
