@@ -1,0 +1,84 @@
+import java.util.*;
+class EmailNotFoundException extends Exception
+{
+	public String getMessage()
+	{
+		return"Email Not Found In Database";
+	}
+}
+
+class IncorrectPasswordException extends Exception
+{
+	public String getMessage()
+	{
+		return "Incorrect Password";
+	}
+}
+
+class Database
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[]args)
+	{
+		System.out.print("Enter email: ");
+		String email=sc.nextLine();
+		
+		System.out.print("Enter password: ");
+		String password=sc.nextLine();
+		
+		String mail="arun@gmail.com";
+		String pass="12345";
+		
+		if (email.equals(mail) && password.equals(pass))
+		{
+			System.out.println("Verified Successful !!! \n\n \t\t\tLogin.........");
+		}
+		else
+		{
+			if (!email.equals(mail) && !password.equals(pass))
+			{
+				try
+				{
+					throw new EmailNotFoundException();
+				}
+				catch (EmailNotFoundException e)
+				{
+					System.out.println(e.getMessage());
+				}
+				
+				try
+			{
+				throw new IncorrectPasswordException();		
+			}
+			catch (Exception e)
+			{
+				System.out.println(e.getMessage());
+			}
+			
+			}
+			else if (email.equals(mail) && !password.equals(pass))
+			{
+				try
+			{
+				throw new IncorrectPasswordException();		
+			}
+			catch (Exception e)
+			{
+				System.out.println(e.getMessage());
+			}
+			}
+			else if (!email.equals(mail) && password.equals(pass))
+			{
+				try
+				{
+					throw new EmailNotFoundException();
+				}
+				catch (EmailNotFoundException e)
+				{
+					System.out.println(e.getMessage());
+				}
+			}
+			
+		}		
+	}
+}
