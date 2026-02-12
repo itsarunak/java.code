@@ -29,56 +29,27 @@ class Database
 		String mail="arun@gmail.com";
 		String pass="12345";
 		
-		if (email.equals(mail) && password.equals(pass))
+		try
 		{
-			System.out.println("Verified Successful !!! \n\n \t\t\tLogin.........");
+			if (email.equals(mail))
+			{
+				if (pass.equals(password))
+				{
+					System.out.println("Login Successfull !!!!");
+				}
+				else
+				{
+					throw new IncorrectPasswordException();
+				}
+			}
+			else
+			{
+				throw new EmailNotFoundException();
+			}
 		}
-		else
+		catch (Exception e)
 		{
-			if (!email.equals(mail) && !password.equals(pass))
-			{
-				try
-				{
-					throw new EmailNotFoundException();
-				}
-				catch (EmailNotFoundException e)
-				{
-					System.out.println(e.getMessage());
-				}
-				
-				try
-			{
-				throw new IncorrectPasswordException();		
-			}
-			catch (Exception e)
-			{
-				System.out.println(e.getMessage());
-			}
-			
-			}
-			else if (email.equals(mail) && !password.equals(pass))
-			{
-				try
-			{
-				throw new IncorrectPasswordException();		
-			}
-			catch (Exception e)
-			{
-				System.out.println(e.getMessage());
-			}
-			}
-			else if (!email.equals(mail) && password.equals(pass))
-			{
-				try
-				{
-					throw new EmailNotFoundException();
-				}
-				catch (EmailNotFoundException e)
-				{
-					System.out.println(e.getMessage());
-				}
-			}
-			
-		}		
+			System.out.println(e.getMessage());
+		}
 	}
 }
