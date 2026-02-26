@@ -1,0 +1,29 @@
+import java.util.*;
+class Automorphic
+{
+	static Scanner sc=new Scanner(System.in);
+	public static boolean isAutomorphic(int num)
+	{
+		int square=num*num;
+		int temp=num;
+		
+		while (temp>0)
+		{
+			if (temp%10 != square%10)
+				return false;
+			
+			temp/=10;
+			square/=10;
+		}
+		
+		return true;
+	}
+	
+	public static void main(String[]args)
+	{
+		System.out.println("Enter number:");
+		int num=sc.nextInt();
+		
+		System.out.println(isAutomorphic(num)?"Automorphic":"Not Automorphic");
+	}
+}
